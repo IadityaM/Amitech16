@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'adi'
-            keyPassword 'phoenix'
-            storeFile file('D:/AndroidStudioKeyStore/fgcapps.jks')
-            storePassword 'phoen1x'
-        }
-    }
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
     defaultConfig {
