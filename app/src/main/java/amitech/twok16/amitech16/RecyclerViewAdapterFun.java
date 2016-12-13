@@ -1,0 +1,196 @@
+package amitech.twok16.amitech16;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.List;
+
+/**
+ * Created by anjali on 21-03-2016.
+ */
+public class RecyclerViewAdapterFun extends RecyclerView.Adapter<RecyclerViewHolders> {
+
+    private List<ItemObject> itemList;
+    private Context context;
+
+    public RecyclerViewAdapterFun(Context context, List<ItemObject> itemList) {
+        this.itemList = itemList;
+        this.context = context;
+    }
+
+    @Override
+    public RecyclerViewHolders onCreateViewHolder(ViewGroup parent, int viewType) {
+
+        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_list, null);
+        RecyclerViewHolders rcv = new RecyclerViewHolders(layoutView);
+        return rcv;
+    }
+
+    @Override
+    public void onBindViewHolder(RecyclerViewHolders holder, int position) {
+        holder.eventname.setText(itemList.get(position).getEname());
+        holder.event_org.setText(itemList.get(position).getEvent_org());
+        holder.cardBack.setImageResource(itemList.get(position).getCardback());
+        holder.day.setText(itemList.get(position).getEday());
+        holder.eventtime.setText(itemList.get(position).getEtime());
+        holder.eventdesc.setText(itemList.get(position).getEdesc());
+        holder.eventvenue.setText(itemList.get(position).getEvenue());
+        holder.eventday.setText(itemList.get(position).getEeday());
+        holder.org_icon.setOnClickListener(clickListener);
+        holder.org_icon.setTag(holder);
+
+
+    }
+    @Override
+    public int getItemCount() {
+        return this.itemList.size();
+    }
+
+    //holder.eventback.setImageResource(itemList.get(position).getPhoto());
+    View.OnClickListener clickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            RecyclerViewHolders vholder = (RecyclerViewHolders) view.getTag();
+            int position = vholder.getPosition();
+            Intent dialIntent = new Intent();
+            dialIntent.setAction(Intent.ACTION_DIAL);
+            if(position == 0)
+            {
+                //Intent dialIntent = new Intent();
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 98100 94053"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 1)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 85870 64553"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 2)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9971288096"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 3)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 8860059715"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 4)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9716887204"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 5)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9873366710"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 6)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9013299735 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 7)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9971974989 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 8)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9953208362 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+
+            if(position == 9)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9810094053 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+
+            if(position == 10)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9899130651"));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 11)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 9013205652 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 12)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 8285804826 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 13)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 7053575856 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+            if(position == 14)
+            {
+                dialIntent.setAction(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel: +91 999228608 "));
+                view.getContext().startActivity(dialIntent);
+
+            }
+
+
+
+
+
+        }
+    };
+
+
+
+
+
+}

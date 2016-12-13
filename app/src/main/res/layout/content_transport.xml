@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backanother"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="amitech.twok16.amitech16.Transport"
+    tools:showIn="@layout/activity_transport">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ReachUS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#000000"
+            android:elevation="15dip"
+            android:gravity="center"
+            android:text="Reach Us Here"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/map_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="#616161"
+            android:elevation="10dip"
+            android:paddingBottom="2dip"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip">
+
+            <fragment
+                android:id="@+id/map1"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="220dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                tools:context="amitech.twok16.amitech16.MapsActivity" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/callus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="5dip"
+            android:background="#a0000000"
+            android:elevation="10dip"
+            android:gravity="center"
+            android:text="Call Us for Assistance"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#a0000000">
+
+                <!--option 2 for circular pic-->
+                <!--Director - Transport Team-->
+                <RelativeLayout
+                    android:id="@+id/TransDir"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:background="#b4e57373"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/TranDirPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/transdir" />
+
+                    <ImageButton
+                        android:id="@+id/callTranDir"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/Trans_Dir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/yn"
+                        android:background="#a0e53935"
+                        android:elevation="10dip"
+                        android:gravity="center"
+                        android:text="Director"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/yn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/TranDirPic"
+                        android:background="#a0e53935"
+                        android:elevation="10dip"
+                        android:gravity="center"
+                        android:text="Yatin Narang"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--Manager1 - Transport Team-->
+                <RelativeLayout
+                    android:id="@+id/TransMan"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:background="#b4e57373"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/TranManPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/transman" />
+
+                    <ImageButton
+                        android:id="@+id/callTransMan"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/Trans_Man"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/TransMan1"
+                        android:background="#a0e53935"
+                        android:elevation="10dip"
+                        android:gravity="center"
+                        android:text="Manager"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/TransMan1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/TranManPic"
+                        android:background="#a0e53935"
+                        android:elevation="10dip"
+                        android:gravity="center"
+                        android:text="Yash Sikri"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/TransMan"
+                    android:layout_marginTop="5dip"
+                    android:background="#ec407a"
+                    android:elevation="10dip"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dip">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Transport is available from:- "
+                        android:textColor="#FFF"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dwarka, Sec-21, Metro Station"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

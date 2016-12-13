@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backanother"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="amitech.twok16.amitech16.ContactUS"
+    tools:showIn="@layout/activity_contactus">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="6dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="6dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/College_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b4f06292"
+                android:elevation="6dip"
+                android:orientation="vertical"
+                android:paddingBottom="4dip"
+                android:paddingTop="2dip">
+
+                <TextView
+                    android:id="@+id/collegeName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/contactUs_CollegeName_Part1"
+                    android:textColor="#FFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/collegeName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/contactUs_CollegeName_Part2"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/College_Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/College_Name"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="#c8ff80ab"
+                android:elevation="4dip"
+                android:orientation="vertical"
+                android:paddingBottom="4dip"
+                android:paddingTop="4dip">
+
+                <TextView
+                    android:id="@+id/collegeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/contactUs_CollegeAddress"
+                    android:textColor="#f5f5f5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/collegeTelNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/contactUs_CollegeTelNo"
+                    android:textColor="#f5f5f5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/collegeID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/contactUs_College_Email"
+                    android:textColor="#f5f5f5"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!--Contact Us Details-->
+            <TextView
+                android:id="@+id/callus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="#78000000"
+                android:elevation="10dip"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="5dip"
+                android:text="Contact Us for Details"
+                android:textColor="#FFF"
+                android:textSize="26sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:background="#78000000">
+
+                <!--Contact Details: President-->
+                <RelativeLayout
+                    android:id="@+id/Pres"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:background="#b400e5ff"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/PresPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/p" />
+
+                    <ImageButton
+                        android:id="@+id/PresCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/PresPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/PresName"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="President"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/PresName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/PresPic"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Rakhsit Makan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!--Contact Details: Vice-President-->
+                <RelativeLayout
+                    android:id="@+id/VPres"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:background="#b401579b"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/VPresPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/vp" />
+
+                    <ImageButton
+                        android:id="@+id/VpresCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/VPresPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/VPresName"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Vice-President"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/VPresName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/VPresPic"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Arpit Sharma"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!--Contact Details: Chief GM-->
+                <RelativeLayout
+                    android:id="@+id/CGM"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Pres"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:background="#b401579b"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/CGMPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cgm" />
+
+                    <ImageButton
+                        android:id="@+id/CGMCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/CGMPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/CGMName"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Cheif GM"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/CGMName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/CGMPic"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Debaarati Mitra"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!--Contact Details: Director Finance-->
+                <RelativeLayout
+                    android:id="@+id/DF"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/VPres"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:background="#b400e5ff"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/DFPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/dfin" />
+
+                    <ImageButton
+                        android:id="@+id/DFCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/DFPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/DFName"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Director Finance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/DFName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/DFPic"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Rajjat Jain"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!--Contact Details: Secretary-->
+                <RelativeLayout
+                    android:id="@+id/Sec"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/CGM"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:background="#b400e5ff"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/SecPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/sec" />
+
+                    <ImageButton
+                        android:id="@+id/SecCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/SecPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/SecName"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Secretary"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/SecName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/SecPic"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Sakshi Mehta"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!--Contact Details: Joint-Secretary-->
+                <RelativeLayout
+                    android:id="@+id/JSec"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/DF"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:background="#b401579b"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/JSecPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/jsec" />
+
+                    <ImageButton
+                        android:id="@+id/JSecCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/JSecPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/JSecName"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Joint Secretary"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/JSecName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/JSecPic"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Abhishek Thakur"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!--Event Team Details-->
+            <TextView
+                android:id="@+id/callus_EventTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="#78000000"
+                android:elevation="10dip"
+                android:gravity="center"
+                android:text="Contact the Event Team"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:background="#78000000">
+
+                <!--Contact Details: Director Cultural-->
+                <RelativeLayout
+                    android:id="@+id/DC"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:background="#b401579b"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/DCPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/dcult" />
+
+                    <ImageButton
+                        android:id="@+id/DCCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/DCPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/DCName"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Cultural Director"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/DCName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/DCPic"
+                        android:background="#a001579b"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Krishan Rai"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!--Contact Details: Director Technical-->
+                <RelativeLayout
+                    android:id="@+id/DT"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:background="#b400e5ff"
+                    android:elevation="10dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/DTPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/dtech" />
+
+                    <ImageButton
+                        android:id="@+id/DTCall"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/callblue" />
+
+                    <TextView
+                        android:id="@+id/DTPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/DTName"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Technical Director"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/DTName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/DTPic"
+                        android:background="#a000e5ff"
+                        android:elevation="20dip"
+                        android:gravity="center"
+                        android:text="Mohit Anand"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/gotoWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"
+                    android:background="#039be5"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="Website"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/gotoTransport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dip"
+                    android:background="#ef4b70"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="Transport Asssitance"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

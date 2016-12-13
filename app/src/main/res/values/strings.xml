@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Amitech \'16</string>
+
+    <string name="google_maps_key">AIzaSyCuqYML1CiWwa87uXxV18XgiCGWMFwExs0</string>
+
+    <string name="splash_amitech16tagline">Enrich \'n\' Explore</string>
+    <string name="splash_Divider">__________________________</string>
+    <string name="splash_Button_Skip">skip</string>
+
+    <string name="onBoading_Button_Text_GetStarted">Get Started</string>
+    <string name="onBoading_Button_Text_Skip">Skip</string>
+    <string name="onBoading_Button_Text_Next">Next</string>
+
+    <string name="title_activity_home">Welcome to Amitech 2k16</string>
+    <string name="title_activity_events_home">Events Home</string>
+    <string name="title_activity_register">Register Here</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="title_activity_transport">Transport Assistance</string>
+    <string name="title_activity_team">The Amitech Team</string>
+    <string name="title_activity_sponsors">Our Sponsors</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_schedule_tab">Schedule</string>
+    <string name="title_activity_cultural_events">Cultural Events</string>
+    <string name="title_activity_fun_events">Fun Events</string>
+    <string name="title_activity_technical_events">Technical Events</string>
+    <string name="title_activity_literary_events">Literary Events</string>
+    <string name="title_activity_website">amitech16.com</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="contactUs_CollegeName_Part1">Amity School</string>
+    <string name="contactUs_CollegeName_Part2"><![CDATA[of Engineering & Technology]]></string>
+    <string name="contactUs_CollegeAddress">580, Najafgarh Kapashera Road, Bijwasan, New Delhi - 61</string>
+    <string name="contactUs_CollegeAddress_Part1">580, Najafgarh Kapashera Road,</string>
+    <string name="contactUs_CollegeAddress_Part2">Bijwasan, New Delhi - 61</string>
+    <string name="contactUs_CollegeTelNo">Landline : 011-28062106</string>
+    <string name="contactUs_College_Email">Email: amitech2016@gmail.com</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>
